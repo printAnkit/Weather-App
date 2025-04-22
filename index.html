@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body style=" background:linear-gradient(135deg, #00feba, #5b548a); background-attachment: fixed; color: white;">
+
+    <div style="display: flex; justify-content: center; margin-top: 100px;"  class="card">
+        <div style="display: flex;" class="search">
+            <input style="width: 200px; padding: 15px; border: 1px solid blue; border-radius: 21px;" type="text" placeholder="Enter City Name." spellcheck="false">
+            <button style="border-radius: 35px; width:50px; height: 50px; cursor: pointer; margin-left: 10px; "><img style="width: 20px;" src="images/search.png"></button>
+        </div>
+    </div>
+
+    <div style=" display: flex; flex-direction: column; align-items: center;" class="weather">
+    <img style="width: 120px;" class="weather-icon" src="images/rain.png">
+    <h1 style="font-size: 70px; margin-top: auto; margin-bottom: auto;" class="temprature">0° C</h1>
+    <h1 style="font-size: 40px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" class="city">City Name</h1>
+    <div style="display: flex; flex-direction: row;" class="details">
+        <div style=" margin-right: 10px; display: flex; flex-direction: row; align-items: center;" class="col">
+            <img style="height: 50px; margin-right: 10px;" src="images/humidity.png" alt="" srcset="">
+            <div>
+                <p style="font-size: larger; margin-bottom: -8px;" class="humidity">0%</p>
+                <p>Humidity</p>
+            </div>
+        </div>
+        <div style=" margin-left: 10px; display: flex; flex-direction: row; align-items: center;" class="col">
+            <img style="height: 50px; margin-right: 10px;" src="images/wind.png" alt="" srcset="">
+            <div>
+                <p style="font-size: larger; margin-bottom: -8px;" class="wind">0 Km/h</p>
+                <p>Wind Speed</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
